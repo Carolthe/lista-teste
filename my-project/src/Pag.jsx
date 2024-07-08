@@ -2,12 +2,12 @@ import { useState } from "react";
 import Tarefas from "./components/Tarefas";
 
 export default function Pag (){
-    const [adicionar, setAdicionar] = useState ([])
-    const [input, setInput] = useState("")
     //para alterar a escrita do button
     const [button, setButton] = useState ("Criar +")
+    const [adicionar, setAdicionar] = useState ([])
+    const [input, setInput] = useState("")
+   
     function adicionarTarefa (){
-        alert("recarregue a pagina")
         setAdicionar([...adicionar, input])
         setButton("Okay!")
     }

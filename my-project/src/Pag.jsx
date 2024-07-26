@@ -11,6 +11,10 @@ export default function Pag (){
         setAdicionar([...adicionar, input])
         setButton("Okay!")
     }
+
+    function excluirTarefa (nome){
+        setAdicionar((prevList)=> prevList.filter((lista)=> lista != nome))
+    }
     return(
         <div>
             <input className="w-96 h-10 mt-40 p-4" type="text"
